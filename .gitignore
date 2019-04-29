@@ -1,0 +1,7 @@
+#Datasets
+*.tsv
+*.zip
+*.jpg
+#environment, to avoid initial env creation
+.env/
+
