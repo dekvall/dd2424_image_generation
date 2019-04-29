@@ -17,7 +17,8 @@ You will probably also need [Git LFS](https://git-lfs.github.com/) to track vari
 * [Utilities](utils) - Various tools such as visualization etc.
 * [Scripts](scripts) - The scripts used for the project
 * [Datasets](datasets) - The datasets used for the project
-l
+
+
 ## Resources
 
 ### Unpaired Image translation notes
@@ -31,6 +32,7 @@ l
 ### Text to image
 
 * [Generative Adversarial Text to Image Synthesis](https://arxiv.org/pdf/1605.05396.pdf)
+* [Paragraph vectors](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
 
 ### Datasets
 
