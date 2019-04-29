@@ -2,6 +2,8 @@
 *.tsv
 *.zip
 *.jpg
+#Models
+*.pth
 #environment, to avoid initial env creation
 .env/
 

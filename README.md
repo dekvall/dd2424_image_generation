@@ -22,12 +22,6 @@ You will probably also need [Git LFS](https://git-lfs.github.com/) to track vari
 
 ## Resources
 
-### Unpaired Image translation notes
-* Adversarial loss [short](https://www.quora.com/What-is-adversarial-loss-in-machine-learning) [paper](https://arxiv.org/pdf/1901.08753.pdf) Important for GANs!
-
-* Cycle consistency loss, train both mapping at once, just like translating english to french and then back to french.
-* [CycleGAN](https://junyanz.github.io/CycleGAN/)
-
 ### Voice to text
 * Link here
 
@@ -39,7 +33,13 @@ You will probably also need [Git LFS](https://git-lfs.github.com/) to track vari
 
 * [Paragraph vectors](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
 
+* [StackGAN++](https://arxiv.org/pdf/1710.10916)
+
+* [CycleGAN](https://junyanz.github.io/CycleGAN/)
+
 * Various papers with code [paperswithcode](https://paperswithcode.com/task/text-to-image-generation)
+
+* Adversarial loss [short](https://www.quora.com/What-is-adversarial-loss-in-machine-learning) [paper](https://arxiv.org/pdf/1901.08753.pdf)
 
 ### Datasets
 
