@@ -29,16 +29,24 @@ You will probably also need [Git LFS](https://git-lfs.github.com/) to track vari
 
 ### Voice to text
 * Link here
+
 ### Text to image
 
 * [Generative Adversarial Text to Image Synthesis](https://arxiv.org/pdf/1605.05396.pdf)
+
+* [AttnGAN](https://arxiv.org/pdf/1711.10485.pdf)
+
 * [Paragraph vectors](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
+
+* Various papers with code [paperswithcode](https://paperswithcode.com/task/text-to-image-generation)
 
 ### Datasets
 
 * Conceptual Captions [link](https://ai.google.com/research/ConceptualCaptions/download)
 
 * Flickr 30k [link](https://www.kaggle.com/hsankesara/flickr-image-dataset/version/1)
+
+* TIMIT Speech corpus [link](https://catalog.ldc.upenn.edu/LDC93S1)
 
 I think that we should use the flickr dataset as the 30k images should really be enough in the limited time we have.
 
