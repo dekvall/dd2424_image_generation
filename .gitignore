@@ -6,4 +6,15 @@
 *.pth
 #environment, to avoid initial env creation
 .env/
+#report
+*.bcf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.out
+*.log
+*.fls
+*.xml
+*.synctex.gz
 
