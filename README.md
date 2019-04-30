@@ -64,4 +64,33 @@ bash resize_images.sh
 
 ## Further notes
 
+### Notes
+
 Might have to use a bag of words model or some other form of context presentation to simplify what the sentence says, look into this further.
+
+### Training GANS
+* [Tips and Tricks](https://github.com/soumith/ganhacks)
+
+## GCP
+### Running StackGAN
+Run StackGAN on GCP from the code folder with
+```bash
+python2 main.py --cfg cfg/coco_eval.yml --gpu 0
+```
+Contrary to popular belief setting `--gpu 0` here actually refers to the id of the gpu. In most other cases `gpu 0` refers to cpu mode. Weird.
+
+The generated images will be stored in the `models/coco/netG_epoch_90` directory.
+
+### Jupyter notebooks
+To use jupyter notebooks, run this on the remote
+```bash
+david@torcher-vm:~/StackGAN-Pytorch$ jupyter notebook --no-browser
+```
+
+Then tunnel your connection through
+```bash
+david@fridge:~$ ssh -N -L localhost:8888:localhost:8888 david@<EXTERNAL_IP_OF_VM>
+```
+Then simply open a browser on `localhost:8888` and provide it with the token that should be visible in the commandline window on the vm to connect.
+### Show results
+The images are viewable in python notebooks and can also, be downloaded from there. I have not yet figured out how to files through the gcloup SDK.
