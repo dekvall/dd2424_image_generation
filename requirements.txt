@@ -1,2 +1,6 @@
 torch==1.0.1.post2
 torchvision==0.2.2.post3
+jupyter==1.0.0
+jupyter-client==5.2.4
+jupyter-console==6.0.0
+jupyter-core==4.4.0

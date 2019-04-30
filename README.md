@@ -12,6 +12,11 @@ This will activate the virtualenv and install the proper packages.
 
 You will probably also need [Git LFS](https://git-lfs.github.com/) to track various datasets
 
+To then launch the jupyter instance use
+```bash
+jupyter notebook
+```
+And you should be directed to `localhost:8888`. In the future we should set up the gcloud instance with the same thing. But it seems some bureaucracy got in the way for now.
 
 ### Project structure
 * [Models](models) - The resulting generated models
