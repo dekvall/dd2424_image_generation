@@ -64,6 +64,9 @@ bash resize_images.sh
 
 ## Further notes
 
+### Report
+The report Overleaf is available [here](https://www.overleaf.com/4488118745cjmprgwyfxcw)
+
 ### Notes
 
 Might have to use a bag of words model or some other form of context presentation to simplify what the sentence says, look into this further.
