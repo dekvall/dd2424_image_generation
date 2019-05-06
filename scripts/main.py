@@ -1,6 +1,7 @@
 import yaml
 from trainer import DCGAN
 from pprint import pprint
+import Enum
 
 def main():
 	config_path = '../config/config.yml'
@@ -11,7 +12,7 @@ def main():
 			print(exc)
 	print('Config loaded from: {}'.format(config_path))
 	pprint(config)
-	DCGAN(**config)
+	DCGAN(Enum(config))
 
 if __name__ == '__main__':
 	main()
