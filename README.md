@@ -96,4 +96,10 @@ david@fridge:~$ ssh -N -L localhost:8888:localhost:8888 david@<EXTERNAL_IP_OF_VM
 ```
 Then simply open a browser on `localhost:8888` and provide it with the token that should be visible in the commandline window on the vm to connect.
 ### Show results
-The images are viewable in python notebooks and can also, be downloaded from there. I have not yet figured out how to files through the gcloup SDK.
+The images are viewable in python notebooks and can also, be downloaded from there. 
+
+#### DCGAN
+Result of the first DCGAN, trained over 200 epochs with the flickr2k_dataset. Based only on the latent vector, no scene information.
+
+![Results for flickr2k dataset, 200 epochs.](results/dcgan_2k_200e_32b.png)
+
