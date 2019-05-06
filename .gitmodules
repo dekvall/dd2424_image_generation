@@ -1,3 +1,6 @@
 [submodule "inspiration/StackGAN-Pytorch"]
 	path = inspiration/StackGAN-Pytorch
 	url = git@github.com:hanzhanggit/StackGAN-Pytorch.git
+[submodule "inspiration/StackGAN-v2"]
+	path = inspiration/StackGAN-v2
+	url = git@github.com:hanzhanggit/StackGAN-v2.git
