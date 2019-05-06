@@ -18,4 +18,5 @@
 *.xml
 *.synctex.gz
 #fun
-
+#scripts
+*.pyc
