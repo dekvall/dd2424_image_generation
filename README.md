@@ -103,3 +103,7 @@ Result of the first DCGAN, trained over 200 epochs with the flickr2k_dataset. Ba
 
 ![Results for flickr2k dataset, 200 epochs.](results/dcgan_2k_200e_32b.png)
 
+## TODO
+* Implement the correct loss function
+* Integrate the text embedding into the discriminator
+
