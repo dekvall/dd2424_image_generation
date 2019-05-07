@@ -22,5 +22,6 @@
 *.pyc
 *.bin
 scripts/.ipynb_checkpoints
+utils/.ipynb_checkpoints
 #datasets
 *.npy
