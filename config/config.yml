@@ -1,5 +1,5 @@
 TRAINING: True
-DATASET_ROOT: "/home/david/dd2424_image_generation/datasets"
+DATASET_ROOT: "/home/david/dd2424_image_generation/datasets/flickr30k"
 WORKERS: 2 
 N_GPU: 1
 
