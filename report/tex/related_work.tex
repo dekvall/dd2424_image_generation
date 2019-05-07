@@ -4,5 +4,8 @@
 %This is to get the autocomplete to work
 \end{comment}
 \begin{document}
-Here comes some text \cite{dummy:1}
+
+\subsection{Image generation}
+General adversarial networks are a fairly new approach to image generation. One such approach is the Deep-Convolutional Adversarial Network(DC-GAN)\cite{radford2015dcgan}. The basis of a GAN is to train two components, one generator and one discriminator. Basically the Discriminator is optimized to notice whether or not an image is created by the Generator and the Generator is optimized to create as realistic images as possible for the generator. DC-GAN do not use any information about the scene. Since that is something we want to do, we look at an approach called ConditionalGAN  \cite{mirza2014conditionalgan} where we condition the Generator, $G$ and Discriminator $D$ on a conditioning value $c$ as well as the randomized vector $z$. This conditioning variable is associated with the text which describes the image. In \cite{zhang2017stackgan} the authors report using a technique called conditioning augmentation where instead of taking the text representation directly 
+
 \end{document}
