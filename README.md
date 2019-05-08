@@ -38,6 +38,8 @@ And you should be directed to `localhost:8888`.
 
 * [CycleGAN](https://junyanz.github.io/CycleGAN/)
 
+* [Deep convolutional GAN](https://arxiv.org/pdf/1511.06434.pdf)
+
 * Various papers with code [paperswithcode](https://paperswithcode.com/task/text-to-image-generation)
 
 * Adversarial loss [short](https://www.quora.com/What-is-adversarial-loss-in-machine-learning) [paper](https://arxiv.org/pdf/1901.08753.pdf)
