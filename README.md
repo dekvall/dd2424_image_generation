@@ -84,6 +84,7 @@ The images are viewable in python notebooks and can also, be downloaded from the
 ![Results for flickr2k dataset with scene information, 160 epochs.](results/own_implementation_160e.png)
 
 ## TODO
-* Implement the correct loss function
+* Implement the correct loss function 
 * Integrate the text embedding into the discriminator
+* Fully connected network to embedding instead of 1d conv
 
