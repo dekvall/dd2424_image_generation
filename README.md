@@ -75,9 +75,13 @@ Then simply open a browser on `localhost:8888` and provide it with the token tha
 The images are viewable in python notebooks and can also, be downloaded from there. 
 
 #### DCGAN
-Result of the first DCGAN, trained over 200 epochs with the flickr2k_dataset. Based only on the latent vector, no scene information.
+* Result of the first DCGAN, trained over 200 epochs with the flickr2k_dataset. Based only on the latent vector, no scene information.
 
 ![Results for flickr2k dataset, 200 epochs.](results/dcgan_2k_200e_32b.png)
+
+* Result from the network aware of the text input. trained on the flickr2k dataset over 160 epochs. 
+
+![Results for flickr2k dataset with scene information, 160 epochs.](results/own_implementation_160e.png)
 
 ## TODO
 * Implement the correct loss function
