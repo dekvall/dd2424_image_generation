@@ -81,7 +81,8 @@ The images are viewable in python notebooks and can also, be downloaded from the
 
 * Result from the network aware of the text input. trained on the flickr2k dataset over 160 epochs. 
 
-![Results for flickr2k dataset with scene information, 160 epochs.](results/own_implementation_160e.png)
+* ![Results for flickr2k dataset with scene information, 160 epochs.](results/own_implementation_160e.png)
+* ![Training progression](results/bad_gan_plot.png)
 
 ## TODO
 * Implement the correct loss function 
