@@ -23,7 +23,7 @@ from IPython.display import HTML
 from PIL import Image
 
 
-# In[24]:
+# In[30]:
 
 
 class CommentedImagesDataset(torch.utils.data.Dataset):
@@ -285,6 +285,8 @@ class DCGAN():
         plt.legend()
         plt.savefig('../results/lossfunc_{}_epocs.png'.format(num))
         plt.close()
+        np.save('../results/G_loss', np.array(self.G_losses))
+        np.save('../results/D_loss', np.array(self.D_losses))
 
     def create_animation(self):
         fig = plt.figure(figsize=(8,8))
@@ -411,7 +413,7 @@ def weights_init(m):
         nn.init.constant_(m.bias.data, 0)
 
 
-# In[25]:
+# In[29]:
 
 
 import yaml
