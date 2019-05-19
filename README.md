@@ -75,10 +75,15 @@ Then simply open a browser on `localhost:8888` and provide it with the token tha
 The images are viewable in python notebooks and can also, be downloaded from there. 
 
 *Girl holding cat stuffed animal*
+
 ![Results for flickr30k dataset, 50,100 epochs.](report/img/merge_girl.png)
+
 *A little boy shows off his suitcase full of toys.*
+
 ![Results for flickr30k dataset, 50,100 epochs.](report/img/merge_suit.png)
+
 *A man with a jackhammer demolishing cement.*
+
 ![Results for flickr30k dataset, 50,100 epochs.](report/img/merge_jack.png)
 
 Loss plot of training with the flickr30k dataset. 100 epochs.
