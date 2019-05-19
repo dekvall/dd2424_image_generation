@@ -74,18 +74,17 @@ Then simply open a browser on `localhost:8888` and provide it with the token tha
 ### Show results
 The images are viewable in python notebooks and can also, be downloaded from there. 
 
-#### DCGAN
-* Result of the first DCGAN, trained over 200 epochs with the flickr2k_dataset. Based only on the latent vector, no scene information.
+*Girl holding cat stuffed animal*
+![Results for flickr30k dataset, 50,100 epochs.](report/img/merge_girl.png)
+*A little boy shows off his suitcase full of toys.*
+![Results for flickr30k dataset, 50,100 epochs.](report/img/merge_suit.png)
+*A man with a jackhammer demolishing cement.*
+![Results for flickr30k dataset, 50,100 epochs.](report/img/merge_jack.png)
 
-![Results for flickr2k dataset, 200 epochs.](results/dcgan_2k_200e_32b.png)
-
-* Result from the network aware of the text input. trained on the flickr2k dataset over 160 epochs. 
-
-* ![Results for flickr2k dataset with scene information, 160 epochs.](results/own_implementation_160e.png)
-* ![Training progression](results/bad_gan_plot.png)
+Loss plot of training with the flickr30k dataset. 100 epochs.
+* ![Training progression](results/both_loss.png)
 
 ## TODO
-* Implement the correct loss function 
-* Integrate the text embedding into the discriminator
-* Fully connected network to embedding instead of 1d conv
+* ~~Implement the correct loss function~~
+* ~~Integrate the text embedding into the discriminator~~
 
