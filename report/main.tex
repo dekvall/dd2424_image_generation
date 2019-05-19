@@ -26,7 +26,9 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{subfiles}
-\usepackage[backend=biber]{biblatex}
+\usepackage{graphicx}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage[backend=biber,sorting=none]{biblatex}
 \addbibresource{bib/bibliography.bib}
 
 \title{Voice to Image Generation}
@@ -40,7 +42,7 @@
 % \AND instead of \And before the third author name.
 
 \author{%
-  Qingyan Ben \And David Ekvall \\ \texttt{dekvall@kth.se} \And Sabeen Nawaz
+   David Ekvall \\ \texttt{dekvall@kth.se} \And Sabeen Nawaz\\\texttt{sabeen@kth.se}\And Qingyan Ben  \\ \texttt{qingyan@kth.se}
   % examples of more authors
   % \And
   % Coauthor \\
@@ -64,11 +66,13 @@
   % \texttt{email} \\
 }
 \begin{document}
+\graphicspath{{img/}}
 % \nipsfinalcopy is no longer used
 \maketitle
 \begin{abstract}
 \subfile{tex/abstract.tex}
 \end{abstract}
+
 \section{Introduction}
 \subfile{tex/introduction.tex}
 
@@ -78,14 +82,21 @@
 \section{Data}
 \subfile{tex/data.tex}
 
-\section{Methods}
+\section{Method}
 \subfile{tex/methods.tex}
 
 \section{Experiments}
 \subfile{tex/experiments.tex}
 
+\section{Result and Discussion}
+\subfile{tex/result.tex}
+
 \section{Conclusion}
 \subfile{tex/conclusion.tex}
-
 \printbibliography
+
+\newpage
+\section{Appendix}
+\section{Learning Outcomes}
+\subfile{tex/learning_outcomes.tex}
 \end{document}

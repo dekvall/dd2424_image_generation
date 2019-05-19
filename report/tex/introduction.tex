@@ -4,5 +4,15 @@
 \addbibresource{../bib/bibliography.bib}
 \end{comment}
 \begin{document}
-With the rise of smart-speakers people are less keen to use their keyboard as an input device, they simply use their voice. A common area of research is to automatically generate captions from images. We propose a way to to it the other way around, but with your voice. One can consider this to be three different parts; extract a sentence from audio, transform the sentence into a scene representation and generate an image which ideally should be a representation of the scene. 
+Automatic image generation is a field in which you produce an image for a specific purpose. There exists methods to generate images from natural language descriptions like \cite{reed2016whatwhere}\cite{reed2016generative}.
+We would like to combine the image generation with and audio encoder so that you would be able to dictate your image. With the rise of smart-speakers it could be a fun way for both artist and amateurs to create art.
+\par
+With the rise of smart-speakers people are less keen to use their keyboard as an input device, they will simply use their voice. Another focus of research nowadays is to automatically generate captions from images. We propose a way to combine these two while flipping the latter the other way around.
+\par
+One can consider this model to be three separate parts combined: audio to text, text to feature space embedding and finally text embedding to image. We must develop a method for combining these three parts together.
+\par
+For the audio to text part, a k-layer neural network trained with minibatch gradient descent is implemented with a preproccessed audio input, which is "transformed" into feature vectors containing Mel Frequency ceptstral coefficients (mfccs). To convert the text to a text embedding, we use a word2vec approach\cite{mikolov2013word2vec} in which we ignore the order and look at each word separately. In this project we aim to generate real images with many objects and relationships, so employ a Conditional  Generative Adversarial Network (GAN) structure. It has two parts, the Generator and the Discrimnator. During training, the Discriminator is optimized to notice whether or not an image is created by the Generator and the Generator is optimized to create as realistic images as possible. Both of these are updated continuously in order to improve network performance. Since we have a limited amount of captions we also perform a simplified version of condition augmentation.
+\par
+We experiment on two datasets: The Speech Command dataset \cite{speechcommandsv2} was used for the training and testing of the deep neural network, which contain 65000 audio file of people all around the world and the \texttt{flickr30k dataset} is used to generate the images, it has 30000 images with 5 captions for each image. In audio to text training, 80 percent was selected as training set and the remaining 2 percent was used as validation set for calculating the cost. In the end we were able to generate images, although the quality was worse than expected, from the network. Our audio encoder also performed worse than expected with only a 12 \% recall.
+
 \end{document}

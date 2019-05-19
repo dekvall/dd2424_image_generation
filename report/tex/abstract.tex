@@ -4,5 +4,8 @@
 \addbibresource{../bib/bibliography.bib}
 \end{comment}
 \begin{document}
-This is the abstract
+
+Generating images with only your voice would be helpful for artistic creation and even film making. We propose such a method where the model is consist of three different sequential parts: audio to text, text to feature space embedding and text embedding to image. For audio to image part, a k-layer neural network trained with minibatch gradient descent is used. For the second part, we use a text embedding model with places similar words near each other in feature space. Finally, a conditional Generative Adversarial Network (GAN) is used to generate the image. We experiment on two datasets: The Speech Command dataset and the 
+\texttt{flickr\_30k} dataset. The audio network recalled 12.31 \% of the words and the conditional GAN produced images of poorer quality than expected. Supposedly because of the complex scene structure of the data in the \texttt{flickr\_30k} dataset.
+
 \end{document}

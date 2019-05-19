@@ -4,6 +4,11 @@
 \addbibresource{../bib/bibliography.bib}
 \end{comment}
 \begin{document}
-\subsection{Image Generation}
-To generate the images the \texttt{flickr\_30k} dataset is used. To begin with the images are resized to $64 \times 64$ in order to make the training process faster. Training a GAN is a very time-consuming process. Most images are in a 4:3 format so the motifs aren't distorted too much. Cropping would risk removing important elements of the scene in the image. 
+\subsection{Datasets for Speech Recognition}
+The Speech Command \cite{speechcommandsv2} dataset was used for the training and testing of the deep neural network. The dataset contains ~65000 audio files of people saying 30 different words. Each audio file is 1 second long. The samples have been collected using crowdsourcing, from people all over the world. There were no special requirements on the quality of the audio file meaning that background noise can occur in the samples. ~18 percent of the dataset was used as the test set, 80 percent was selected as training set and the remaining 2 percent was used as validation set for calculating the cost.  The audio samples were processed and extracted to feature vectors using Mel Frequency Cepstral Coeffecients (mffc). Each audio file was extracted to five mfccs, mainly because of computational advantage with a smaller size of the feature vector. Mffcs were computed using functions from LibROSA, which is a python package for audio analysis. \cite{mcfee2015librosa}
+
+\subsection{Datasets of Image Generation}
+To generate the images the \texttt{flickr\_30k} dataset is used. It contains 30 000 images with 5 captions for each image. The images are resized to $64 \times 64$ in order to reduce the size of the network since training a GAN is a very time-consuming process. Most images are in a 4:3 format so images will not be subject to motif-altering distortions. The captions can sometimes describe different parts of the image and cropping would risk removing important elements of the depicted scene.
+Before the images are fed into the network, each one of the three color channels are normalized. The text embedding for each caption were generated beforehand and added to the dataset instead of re-generating it each training-cycle.
+
 \end{document}

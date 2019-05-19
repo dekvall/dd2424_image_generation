@@ -4,5 +4,9 @@
 \addbibresource{../bib/bibliography.bib}
 \end{comment}
 \begin{document}
-Here comes some text
+\subsection{Audio to text}
+In order to find good values for the hyperparameters (described in table 1) for the network, a coarse search was done.  $\eta_{min}$ and   $\eta_{max}$ was explored in the range of 1e-7 to 1e1. $\lambda$ was explored in the range 1e-3 to 1e-1. The network was also trained with varying $n_s$ and number of cycles $l$. $n_s$ was explored in the range of $1*100$ to $10*100$, while $l$ varied between 5 and 15. We also experimented with different numbers of layers in the network.
+\subsection{Text to image}
+The captions in the dataset \texttt{flickr\_30k} can be considered to be fairly complex as the scene consists of many parts and a multitude of classes. In \cite{reed2016generative} the datasets used were of fairly uniform data such as a flower or a bird. Our model had to work with a multitude of different words. 
+
 \end{document}
