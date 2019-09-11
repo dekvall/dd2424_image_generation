@@ -23,9 +23,6 @@ And you should be directed to `localhost:8888`.
 
 ## Resources
 
-### Voice to text
-* Link here
-
 ### Text to image
 
 * [Generative Adversarial Text to Image Synthesis](https://arxiv.org/pdf/1605.05396.pdf)
@@ -47,9 +44,6 @@ And you should be directed to `localhost:8888`.
 * Training GANs, [Tips and Tricks](https://github.com/soumith/ganhacks)
 
 ## Further information
-
-### Report
-The report Overleaf is available [here](https://www.overleaf.com/4488118745cjmprgwyfxcw)
 
 ### Notes
 
